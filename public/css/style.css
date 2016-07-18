@@ -1,5 +1,30 @@
-.jumbotron .img-responsive{
-display: block;
-margin: auto;
-width: 20%;
+.jumbotron .img-responsive {
+	/* display: block; */
+	margin: auto;
+	/* width: 20%; */
+	height: 50vh;
+}
+
+
+.fadeIn {
+	margin: auto;
+	text-align: center;
+}
+
+.fadeIn img {
+	display: block;
+	z-index: 1;
+}
+
+.fadeIn b {
+	padding: 23.5vh 0;
+	display: none;
+}
+
+.fadeIn:hover img{
+	display: none;
+}
+
+.fadeIn:hover b{
+	display: block;
 }
