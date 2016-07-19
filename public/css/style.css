@@ -1,5 +1,13 @@
 .jumbotron .img-responsive{
 display: block;
 margin: auto;
-width: 20%;
+}
+.row-icons .img-responsive{
+	width: 100%;
+}
+
+@mobile only screen{
+	.img-responsive{
+		width: 5%;
+	}
 }

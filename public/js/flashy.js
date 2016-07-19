@@ -1,11 +1,13 @@
 $(document).ready(function(){
+ 	
+ 	$("#show,#show1").hide();
 
-	$("#akeem").fadeTo('slow',.25);
 	$("#akeem").mouseleave(function(){
-		$("#akeem").fadeTo('slow',.25);
+					$("#akeem").transition({scale:1,delay:250});
 		});
 	$("#akeem").mouseenter(function(){
-		$("#akeem").fadeTo('fast',1.00);
+				$("#akeem").transition({scale:0,delay:500});
+		$("#show,#show1").show();
 	});
 });
 
