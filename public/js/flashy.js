@@ -1,13 +1,33 @@
 $(document).ready(function(){
- 	
- 	$("#show,#show1").hide();
 
-	$("#akeem").mouseleave(function(){
-					$("#akeem").transition({scale:1,delay:250});
+	$("#home").transition({transform:'scale(0.8)'});
+
+	$("#resume").mouseleave(function(){
+					$("#akeem").transition({x:0});
+						$("#resume").transition({transform:'scale(1)'});
+			
 		});
-	$("#akeem").mouseenter(function(){
-				$("#akeem").transition({scale:0,delay:500});
-		$("#show,#show1").show();
+	$("#resume").mouseenter(function(){
+				$("#akeem").transition({x:140,delay:0});
+					$("#resume").transition({transform:'scale(0.5)'});
+			
 	});
+
+	$("#contact").mouseleave(function(){
+					$("#akeem").transition({x:0});
+						$("#contact").transition({transform:'scale(1)'});
+		});
+	$("#contact").mouseenter(function(){
+				$("#akeem").transition({x:-140,delay:0});
+					$("#contact").transition({transform:'scale(0.5)'});
+	});
+
+	$("#home").mouseleave(function(){
+						$("#home").transition({transform:'scale(0.8)'});
+		});
+	$("#home").mouseenter(function(){
+					$("#home").transition({transform:'scale(0.5)'});
+
+});
 });
 
